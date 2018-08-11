@@ -21,7 +21,7 @@ bot.on ("message", async message => {
     let args = messageArray.slice(1);
 
     bot.on("guildMemberAdd", member => {
-    const bvn = member.guild.channels.find(m => m.name === "réception")
+    const bvn = member.guild.channels.find("name", "réception")
     if(!bvn)return;
     var embed = new Discord.RichEmbed()
             .setAuthor("L.G.G.#1073", bot.user.avatarURL)
@@ -34,7 +34,7 @@ bot.on ("message", async message => {
 
 })
 bot.on("guildMemberRemove", member => {
-    const bvn = member.guild.channels.find(m => m.name === "réception")
+    const bvn = member.guild.channels.find("name", "réception")
     if(!bvn)return;
     var embed = new Discord.RichEmbed()
             .setAuthor("L.G.G.#1073", bot.user.avatarURL)
