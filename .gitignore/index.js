@@ -16,7 +16,7 @@ bot.on("guildMemberAdd", member => {
             .addField(`Bienvenue à ${member.user.tag} !`,"Fais )help pour utiliser les commandes de Loys !", true)
             .addField(`Tu es le ${member.guild.memberCount}ème membre`, `N'oublie pas de lire le <#372382732677808129> et passe du bon temps sur le serveur !`)
             .setColor("0x04B404")
-            .setFooter("Bienvnenue dans le LoysCorp Global Group (L.G.G.) !");
+            .setFooter("Bienvenue dans le LoysCorp Global Group (L.G.G.) !");
         bvn.send(embed)
     
 })
