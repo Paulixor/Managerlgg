@@ -7,7 +7,6 @@ bot.on("ready", () => {
     console.log(`${bot.user.tag} est en ligne !`)
     });
    
-
 bot.on("guildMemberAdd", member => {
     const bvn = member.guild.channels.find(`name`, "réception")
     if(!bvn) return;
@@ -19,7 +18,7 @@ bot.on("guildMemberAdd", member => {
             .setColor("0x04B404")
             .setFooter("Bienvnenue dans le LoysCorp Global Group (L.G.G.) !");
         bvn.send(embed)
-
+    
 })
 bot.on("guildMemberRemove", member => {
     const bvn = member.guild.channels.find(`name`, "réception")
@@ -31,13 +30,14 @@ bot.on("guildMemberRemove", member => {
             .setColor("0f50505")
             .setFooter("Au revoir !");
         bvn.send(embed)
-
+    
 })
 bot.on(`guildMemberAdd`, member => {
-if(!member.guild.id === "371641779952287744") return
-    var role = member.guild.roles.find(`name`, `Client`);
-    member.addRole(role)
+    if(!member.guild.id === "371641779952287744") return
+        var role = member.guild.roles.find(`name`, `Client`);
+        member.addRole(role)
 })
+
 
 
 bot.on ("message", async message => {
@@ -59,5 +59,4 @@ bot.on ("message", async message => {
         return message.channel.send("https://discordapp.com/oauth2/authorize?client_id=468362972511600641&permissions=0&scope=bot")
     }
 })
-
 bot.login(process.env.TOKEN);
