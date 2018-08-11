@@ -30,7 +30,7 @@ bot.on ("message", async message => {
             .addField(`Tu es le ${member.guild.memberCount}ème membre`, `N'oublie pas de lire le <#372382732677808129> et passe du bon temps sur le serveur !`)
             .setColor("0x04B404")
             .setFooter("Bienvnenue dans le LoysCorp Global Group (L.G.G.) !");
-        message.channel.send(embed)
+        bvn.send(embed)
 
 })
 bot.on("guildMemberRemove", member => {
@@ -42,7 +42,7 @@ bot.on("guildMemberRemove", member => {
             .addField(`Départ de ${member.user.tag} !`,"Nous sommes désolés que tu ne te sois pas plu ici. Bonne continuation !", true)
             .setColor("0f50505")
             .setFooter("Au revoir !");
-        message.channel.send(embed)
+        bvn.send(embed)
 
 })
 bot.on(`guildMemberAdd`, member => {
