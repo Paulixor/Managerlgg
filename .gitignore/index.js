@@ -8,19 +8,7 @@ bot.on("ready", () => {
     });
    
 
-
-
-
-bot.on ("message", async message => {
-    if(message.author.bot) return;
-    if(message.channel.type === "dm") return;
-
-    let prefix = "L!";
-    let messageArray = message.content.split(" ");
-    let cnd = messageArray[0];
-    let args = messageArray.slice(1);
-
-    bot.on("guildMemberAdd", member => {
+bot.on("guildMemberAdd", member => {
     const bvn = member.guild.channels.find(`name`, "réception")
     if(!bvn) return;
     var embed = new Discord.RichEmbed()
@@ -50,6 +38,18 @@ if(!member.guild.id === "371641779952287744") return
     var role = member.guild.roles.find(`name`, `Client`);
     member.addRole(role)
 })
+
+
+bot.on ("message", async message => {
+    if(message.author.bot) return;
+    if(message.channel.type === "dm") return;
+
+    let prefix = "L!";
+    let messageArray = message.content.split(" ");
+    let cnd = messageArray[0];
+    let args = messageArray.slice(1);
+
+    
     
     
                                                     //Commandes
