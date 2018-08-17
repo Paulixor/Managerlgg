@@ -61,7 +61,7 @@ bot.on ("message", async message => {
     
     if(cnd === `)roles`){
         var embed = new Discord.RichEmbed()
-            .setAuthor("Loys#7639", bot.user.avatarURL)
+            .setAuthor("L.G.G.#1073", bot.user.avatarURL)
             .setTitle(message.guild.name)
             .setDescription("Ces commandes sont utilisables uniquement sur les serveurs du L.G.G.")
             .addField("Liste des rôles disponibles sur Loys Initiative Corporation", `)add Notif-Divertissement : ajoute le rôle Notif-Divertissement
@@ -81,7 +81,7 @@ bot.on ("message", async message => {
 )add Notif-LGG : ajoute le rôle Notif-LGG
 )remove Notif-LGG : enlève le rôle Notif-LGG`, true)
             .setColor("0x04B404")
-            .setFooter("Loys®, développé par Paulixor#7267 | LoysCorp Global Group (L.G.G.)")
+            .setFooter("L.G.G.®, développé par Paulixor#7267 | LoysCorp Global Group (L.G.G.)")
         message.channel.send(embed);
     }
     
