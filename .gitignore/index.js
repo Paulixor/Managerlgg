@@ -3,7 +3,7 @@ const bot = new Discord.Client;
 
 
 bot.on("ready", () => {
-    bot.user.setActivity(`Manager 1.0`, {type: `PLAYING`});
+    bot.user.setActivity(`être le manager du L.G.G.`, {type: `PLAYING`});
     console.log(`${bot.user.tag} est en ligne !`)
     });
    
