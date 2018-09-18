@@ -61,27 +61,19 @@ bot.on ("message", async message => {
     
     if(cnd === `)roles`){
         var embed = new Discord.RichEmbed()
-            .setAuthor("L.G.G.#1073", bot.user.avatarURL)
+            .setAuthor("Loys#7639", bot.user.avatarURL)
             .setTitle(message.guild.name)
             .setDescription("Ces commandes sont utilisables uniquement sur les serveurs du L.G.G.")
             .addField("Liste des rôles disponibles sur Loys Initiative Corporation", `)add Notif-Divertissement : ajoute le rôle Notif-Divertissement
 )remove Notif-Divertissement : enlève le rôle Notif-Divertissement 
-)add Notif-LGG : ajoute le rôle Notif-LGG
-)remove Notif-LGG : enlève le rôle Notif-LGG
-)add Notif-LIC : ajoute le rôle Notif-LIC
-)remove Notif-LIC : enlève le rôle Notif-LIC
-)add Notif-Loys : ajoute le rôle Notif-Loys
-)remove Notif-Loys : enlève le rôle Notif-Loys
 )add Gamer : ajoute le rôle Gamer
 )remove Gamer : enlève le rôle Gamer
 )add Graphiste : ajoute le rôle Graphiste
-)remove Graphiste : enlève le rôle Graphiste`, true)
-            .addField("Liste des rôles disponibles sur L.G.G. - Développement de bots", `)add Elève : ajoute le rôle Elève
-)remove Elève : enlève le rôle Elève
-)add Notif-LGG : ajoute le rôle Notif-LGG
-)remove Notif-LGG : enlève le rôle Notif-LGG`, true)
+)remove Graphiste : enlève le rôle Graphiste
+)add Elève : ajoute le rôle Elève
+)remove Elève : enlève le rôle Elève`, true)
             .setColor("0x04B404")
-            .setFooter("L.G.G.®, développé par Paulixor#7267 | LoysCorp Global Group (L.G.G.)")
+            .setFooter("Loys®, développé par Paulixor#7267 | LoysCorp Global Group (L.G.G.)")
         message.channel.send(embed);
     }
     
@@ -180,76 +172,7 @@ if(!message.member.roles.exists(gRole4)) {
         return;
     }}
     
-    let gRole5 = message.guild.roles.find(`name`,`Notif-LGG`)
- 
-if(message.content.startsWith(")add Notif-LGG")){
-        message.member.addRole(gRole5)
-        message.channel.send(`${message.author}, vous avez reçu le rôle Notif-LGG`);
-        return;
-
-if(message.member.roles.exists(gRole5)) { 
-        message.channel.send("vous avez déjà ce rôle. Pour l'enlever, tapez )remove Notif-LGG");
-        return;
-    }}
     
-           
-if(message.content.startsWith(")remove Notif-LGG")){
-        message.member.removeRole(gRole5)
-        message.channel.send(`${message.author}, vous vous êtes enlevé le rôle Notif-LGG`);
-        return;
-
-if(!message.member.roles.exists(gRole5)) { 
-        message.channel.send("vous n'avez pas ce rôle. Pour l'obtenir, tapez `)add Notif-LGG`");
-        return;
-    }}
-    
-    let gRole6 = message.guild.roles.find(`name`,`Notif-LIC`)
- 
-if(message.content.startsWith(")add Notif-LIC")){
-        message.member.addRole(gRole6)
-        message.channel.send(`${message.author}, vous avez reçu le rôle Notif-LIC`);
-        return;
-
-if(message.member.roles.exists(gRole6)) { 
-        message.channel.send("vous avez déjà ce rôle. Pour l'enlever, tapez )remove Notif-LIC");
-        return;
-    }}
-    
-           
-if(message.content.startsWith(")remove Notif-LIC")){
-        message.member.removeRole(gRole6)
-        message.channel.send(`${message.author}, vous vous êtes enlevé le rôle Notif-LIC`);
-        return;
-
-if(!message.member.roles.exists(gRole6)) { 
-        message.channel.send("vous n'avez pas ce rôle. Pour l'obtenir, tapez `)add Notif-LIC`");
-        return;
-    }}
-    
-    let gRole7 = message.guild.roles.find(`name`,`Notif-Loys`)
- 
-if(message.content.startsWith(")add Notif-Loys")){
-        message.member.addRole(gRole7)
-        message.channel.send(`${message.author}, vous avez reçu le rôle Notif-Loys`);
-        return;
-
-if(message.member.roles.exists(gRole7)) { 
-        message.channel.send("vous avez déjà ce rôle. Pour l'enlever, tapez )remove Notif-Loys");
-        return;
-    }}
-    
-           
-if(message.content.startsWith(")remove Notif-Loys")){
-        message.member.removeRole(gRole7)
-        message.channel.send(`${message.author}, vous vous êtes enlevé le rôle Notif-Loys`);
-        return;
-
-if(!message.member.roles.exists(gRole7)) { 
-        message.channel.send("vous n'avez pas ce rôle. Pour l'obtenir, tapez `)add Notif-Loys`");
-        return;
-    }}
-
-
 
 
 })
